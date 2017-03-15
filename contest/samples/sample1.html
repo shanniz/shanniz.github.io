@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>	BIT Universal Programming Contest</title>
+	<meta name="description" content="BIT Programming Contest" >
+	<meta name="shan" content="Contest">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- Bootstrap  -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- icon fonts font Awesome -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Custom Styles -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div id="problem-page-complete">
+                            <div id="problem-left">
+                              
+                              <div class="content"><h3>All submissions for this problem are available.</h3><h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JULY16/mandarin/CHSGMNTS.pdf">Mandarin Chinese</a>, <a target="_blank" href="http://www.codechef.com/download/translated/JULY16/russian/CHSGMNTS.pdf">Russian</a> and <a target="_blank" href="http://www.codechef.com/download/translated/JULY16/vietnamese/CHSGMNTS.pdf">Vietnamese</a> as well.</h3>
+<p>Chef has an array <b>A</b> consisting of <b>N</b> elements. He wants to find number of pairs of non-intersecting segments [<b>a</b>, <b>b</b>] and [<b>c</b>, <b>d</b>] (1 ≤ <b>a</b> ≤ <b>b</b> &lt; <b>c</b> ≤ <b>d</b> ≤ <b>N</b>) such there is no number that occurs in the subarray {<b>A<sub>a</sub></b>, <b>A<sub>a+1</sub></b>, ... , <b>A<sub>b</sub></b>} and   {<b>A<sub>c</sub></b>, <b>A<sub>c+1</sub></b>, ... , <b>A<sub>d</sub></b>} simultaneously. </p>
+<p>Help Chef to find this number.</p>
+<h3>Input</h3>
+<ul>
+<li>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</li>
+<li>The first line of each test case contains a single integer <b>N</b> denoting the number of elements in the array.</li>
+<li>The second line contains <b>N</b> space-separated integers <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>, ..., <b>A<sub>N</sub></b>. </li>
+</ul>
+<h3>Output</h3>
+<ul>
+<li>For each test case, output a single line containing one integer - number of pairs of non-intersecting segments. </li>
+</ul>
+<h3>Constraints</h3>
+<ul>
+<li><b>1</b> ≤ <b>T</b> ≤ <b>5</b></li>
+<li><b>1</b> ≤ <b>N</b> ≤ <b>1000</b></li>
+<li><b>1</b> ≤ <b>A<sub>i</sub></b> ≤ <b>10<sup>9</sup></b></li>
+</ul>
+<h3>Subtasks</h3>
+<p><b>Subtask 1 (7 points)</b></p>
+<ul>
+<li><b>1</b> ≤ <b>N</b> ≤ <b>20</b></li>
+</ul>
+<p><b>Subtask 2 (34 points)</b></p>
+<ul>
+<li><b>1</b> ≤ <b>N</b> ≤ <b>300</b></li>
+</ul>
+<p><b>Subtask 3 (59 points)</b></p>
+<ul>
+<li>Original constraints</li>
+</ul>
+<h3>Example</h3>
+<pre><b>Input:</b>
+2
+3
+1 2 3
+4
+1 2 1 2
+
+<b>Output:</b>
+5
+4
+</pre><h3>Explanation</h3>
+<p><b>Example case 1.</b><br>
+All possible variants are correct: {[1, 1], [2, 2]}, {[1, 1], [2, 3]}, {[1, 2], [3, 3]}, {[2, 2], [3, 3]}, {[1,1], [3, 3]}.
+</p>
+<p><b>Example case 2.</b><br>
+Correct segments: {[1, 1], [2, 2]}, {[1, 1], [4, 4]}, {[2, 2], [3, 3]}, {[3, 3], [4, 4]}.</p>
+
+                                
+                                <hr>
+                                <table cellspacing="0" cellpadding="0" align="left">
+                                  <tbody>
+                                    
+                                    <tr>
+                                      <td width="14%">Author:</td>
+                                      <td>
+                                        <a href="/users/antoniuk1" data-bindattr-271="271">antoniuk1</a>
+                                      </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Tester:</td>
+                                      <td>
+                                        <a href="/users/mugurelionut" data-bindattr-273="273">mugurelionut</a>
+                                      </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Editorial:</td>
+                                      <td>
+                                        <a href="http://discuss.codechef.com/problems/CHSGMNTS" data-bindattr-275="275">http://discuss.codechef.com/problems/CHSGMNTS</a>
+                                      </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Tags:</td>
+                                      <td><a class="problem-tag-small " href="/tags/problems/antoniuk1">
+                    antoniuk1
+                </a><a class="problem-tag-small " href="/tags/problems/dp">
+                    dp
+                </a><a class="problem-tag-small " href="/tags/problems/july16">
+                    july16
+                </a><a class="problem-tag-small " href="/tags/problems/medium">
+                    medium
+                </a></td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Date Added:</td>
+                                      <td>18-07-2015</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                      <td width="14%">Time Limit:</td>
+                                      <td>1 sec</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="14%">Source Limit:</td>
+                                      <td>50000 Bytes</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="14%">Languages:</td>
+                                      <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <ul class="button-list bottom-bttn">
+                                <input value="value" data-bindattr-270="270" type="hidden">
+                                
+                                <li><a class="button" href="/submit/CHSGMNTS" data-bindattr-279="279">Submit</a></li>
+                                
+                              </ul>
+                              
+
+                            </div>
+                            <div id="problem-right">
+                              <div id="sidebar-problem">
+                                <div id="success-submissions">
+                                  
+                                  <div data-ember-action="280">
+                                  <h3>SUCCESSFUL SUBMISSIONS
+                                    <button class="toogle-button fa fa-plus-square-o"></button>
+                                  </h3>
+                                </div>
+                                
+                                <div id="rankContentDiv"></div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+</body>
+</html>

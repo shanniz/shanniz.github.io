@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>	BIT Universal Programming Contest</title>
+	<meta name="description" content="BIT Programming Contest" >
+	<meta name="shan" content="Contest">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- Bootstrap  -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- icon fonts font Awesome -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Custom Styles -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+  <h1>Most Popular Friend </h1>
+
+  <div id="problem-page-complete">
+                           
+    <div id="problem-page-complete">
+                            <div id="problem-left">
+                              
+                              <div class="content"><h3>All submissions for this problem are available.</h3>Anna Hazare is a well known social activist in India.
+<br><br>
+On 5th April, 2011 he started "Lokpal Bill movement".
+<br><br>
+Chef is very excited about this movement. He is thinking of contributing to it. He gathers his cook-herd and starts thinking about how our community can contribute to this.
+<br><br>
+All of them are excited about this too, but no one could come up with any idea. Cooks were slightly disappointed with this and went to consult their friends.
+<br><br>
+One of the geekiest friend gave them the idea of spreading knowledge through Facebook. But we do not want to spam people's wall. So our cook came up with the idea of dividing Facebook users into small friend groups and then identify the most popular friend in each group and post on his / her wall. They started dividing users into groups of friends and identifying the most popular amongst them.
+<br><br>
+The notoriety of a friend is defined as the averaged distance from all the other friends in his / her group. This measure considers the friend himself, and the trivial distance of '0' that he / she has with himself / herself.
+<br><br>
+The most popular friend in a group is the friend whose notoriety is least among all the friends in the group. 
+<br><br>
+Distance between X and Y is defined as follows:<br>
+Minimum number of profiles that X needs to visit for reaching Y's profile(Including Y's profile). X can open only those profiles which are in the friend list of the current opened profile. For Example:<br>
+- Suppose A is friend of B.<br>
+- B has two friends C and D.<br>
+- E is a friend of D.
+<br><br>
+Now, the distance between A and B is 1, A and C is 2, C and E is 3. 
+<br><br>
+So, one of our smart cooks took the responsibility of identifying the most popular friend in each group and others will go to persuade them for posting.  This cheeky fellow knows that he can release his burden by giving this task as a long contest problem.
+<br><br>
+Now, he is asking you to write a program to identify the most popular friend among all the friends in each group. Also, our smart cook wants to know the average distance of everyone from the most popular friend.
+
+<h3>Input</h3>
+<p>
+Friends in a group are labelled with numbers to hide their Facebook identity. The first line of input contains the number of groups in which users are divided. First line of each group contains the number of friends that belong to that group. i<sup>th</sup> line of each group contains the space separated friend list of 'i'. You are assured that each friend's profile can be accessed by the profile of every other friend by following some sequence of profile visits.</p>
+
+<h3>Output</h3>
+<p>Your output contains the most popular friend name label along with the average distance (space separated) from all other friends (including himself / herself) in six digits of precision. There might be multiple most popular friend, in that case output the friend labelled with least number. 
+</p>
+
+<h3>Note:</h3>
+<p>
+Each person in a group have atleast one friend and he/she cannot be in his/her own friend list. <br>
+Number of friends in a group cannot be more than 100.<br>
+There are atmost 100 groups.
+</p>
+<h3>Example</h3>
+
+<pre><b>Input:</b>
+1
+6
+3
+5
+1 4
+3 5 6
+2 4 6
+4 5
+
+<b>Output:</b>
+4 1.166667
+</pre>
+                                
+                                <hr>
+                                <table cellspacing="0" cellpadding="0" align="left">
+                                  <tbody>
+                                    
+                                    <tr>
+                                      <td width="14%">Author:</td>
+                                      <td>
+                                        <a href="/users/ashwin_jain" data-bindattr-271="271">ashwin_jain</a>
+                                      </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Tester:</td>
+                                      <td>
+                                        <a href="/users/gamabunta" data-bindattr-273="273">gamabunta</a>
+                                      </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Editorial:</td>
+                                      <td>
+                                        <a href="http://discuss.codechef.com/problems/LOKBIL" data-bindattr-275="275">http://discuss.codechef.com/problems/LOKBIL</a>
+                                      </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Tags:</td>
+                                      <td><a class="problem-tag-small " href="/tags/problems/ashwin_jain">
+                    ashwin_jain
+                </a><a class="problem-tag-small " href="/tags/problems/easy">
+                    easy
+                </a><a class="problem-tag-small " href="/tags/problems/july11">
+                    july11
+                </a></td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Date Added:</td>
+                                      <td>14-06-2011</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                      <td width="14%">Time Limit:</td>
+                                      <td>1 sec</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="14%">Source Limit:</td>
+                                      <td>50000 Bytes</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="14%">Languages:</td>
+                                      <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.4, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <ul class="button-list bottom-bttn">
+                                <input value="value" data-bindattr-270="270" type="hidden">
+                                
+                                <li><a class="button" href="/submit/LOKBIL" data-bindattr-279="279">Submit</a></li>
+                                
+                              </ul>
+                              
+
+                            </div>
+                            <div id="problem-right">
+                              <div id="sidebar-problem">
+                                <div id="success-submissions">
+                                  
+                                  <div data-ember-action="280">
+                                  <h3>SUCCESSFUL SUBMISSIONS
+                                    <button class="toogle-button fa fa-plus-square-o"></button>
+                                  </h3>
+                                </div>
+                                
+                                <div id="rankContentDiv"></div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+</body>
+</html>

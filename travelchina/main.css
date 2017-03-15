@@ -1,0 +1,44 @@
+@import "compass/css3";
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.background-image {
+  /*background: url('tl.jpg') no-repeat center center fixed;
+  */
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  opacity: 0;
+  
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+}
+
+.background-image.visible {
+  opacity: 1;
+}
+
+.pro{
+  text-align: center;
+  vertical-align: middle;
+  color: aliceblue;
+  margin-top: 7%;
+  font-size: 220%;
+  font-family: 'Comic Sans, Comic Sans MS, cursive';
+  font-style: italic;
+}
