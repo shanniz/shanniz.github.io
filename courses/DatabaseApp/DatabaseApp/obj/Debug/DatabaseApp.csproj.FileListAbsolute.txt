@@ -1,9 +1,0 @@
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\bin\Debug\DatabaseApp.exe.config
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\bin\Debug\DatabaseApp.exe
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\bin\Debug\DatabaseApp.pdb
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\obj\Debug\DatabaseApp.csprojResolveAssemblyReference.cache
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\obj\Debug\DatabaseApp.Form1.resources
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\obj\Debug\DatabaseApp.Properties.Resources.resources
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\obj\Debug\DatabaseApp.csproj.GenerateResource.Cache
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\obj\Debug\DatabaseApp.exe
-C:\Users\rajai\OneDrive\Desktop\C# programming\DatabaseApp\DatabaseApp\obj\Debug\DatabaseApp.pdb
