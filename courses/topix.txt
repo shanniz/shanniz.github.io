@@ -1,0 +1,12 @@
+ToPiX foR mid-tErM:
+
+Bitwise operators, bitwise shift operators with example programs
+type casting with examples
+
+Methods, Arguments types, with Example programs.
+
+Arrays and strings in C#.
+Operators.
+
+Windows Forms Application. Common controls. Click events
+
