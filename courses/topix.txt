@@ -8,5 +8,6 @@ Methods, Arguments types, with Example programs.
 Arrays and strings in C#.
 Operators.
 
-Windows Forms Application. Common controls. Click events
+Windows Forms Application. Common controls(including pictureBox, textView). Click events
 
+P.S: Also review example programs done in class and lab
