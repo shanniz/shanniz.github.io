@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 14, 2019 at 01:57 PM
+-- Generation Time: Jan 15, 2019 at 02:11 PM
 -- Server version: 5.7.24-0ubuntu0.18.04.1
 -- PHP Version: 7.2.10-0ubuntu0.18.04.1
 
@@ -19,19 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `product_sales`
 --
-
-DELIMITER $$
---
--- Procedures
---
-CREATE DEFINER=`root`@`localhost` PROCEDURE `getStoreSales` ()  BEGIN
-
-END$$
-
-CREATE DEFINER=`root`@`localhost` PROCEDURE `getTotalSales` ()  NO SQL
-SELECT * FROM Store_Information$$
-
-DELIMITER ;
 
 -- --------------------------------------------------------
 
