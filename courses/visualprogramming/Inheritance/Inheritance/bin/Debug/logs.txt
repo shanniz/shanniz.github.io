@@ -1,0 +1,2 @@
+parent class 1 args constructor called at 1/29/2019 5:36:38 PM
+ derived class constructor called at 1/29/2019 5:36:38 PM
