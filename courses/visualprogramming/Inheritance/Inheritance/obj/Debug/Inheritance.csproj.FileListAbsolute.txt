@@ -1,8 +1,0 @@
-c:\users\azeemahmed\documents\visual studio 2015\Projects\Inheritance\Inheritance\bin\Debug\Inheritance.exe
-c:\users\azeemahmed\documents\visual studio 2015\Projects\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
-c:\users\azeemahmed\documents\visual studio 2015\Projects\Inheritance\Inheritance\obj\Debug\Inheritance.csprojResolveAssemblyReference.cache
-c:\users\azeemahmed\documents\visual studio 2015\Projects\Inheritance\Inheritance\obj\Debug\Inheritance.Form1.resources
-c:\users\azeemahmed\documents\visual studio 2015\Projects\Inheritance\Inheritance\obj\Debug\Inheritance.Properties.Resources.resources
-c:\users\azeemahmed\documents\visual studio 2015\Projects\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.GenerateResource.Cache
-c:\users\azeemahmed\documents\visual studio 2015\Projects\Inheritance\Inheritance\obj\Debug\Inheritance.exe
-c:\users\azeemahmed\documents\visual studio 2015\Projects\Inheritance\Inheritance\obj\Debug\Inheritance.pdb
