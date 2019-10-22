@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 15, 2019 at 02:11 PM
--- Server version: 5.7.24-0ubuntu0.18.04.1
--- PHP Version: 7.2.10-0ubuntu0.18.04.1
+-- Generation Time: Oct 22, 2019 at 10:00 AM
+-- Server version: 5.7.25-0ubuntu0.18.04.2
+-- PHP Version: 7.2.15-0ubuntu0.18.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,16 @@ SET time_zone = "+00:00";
 --
 -- Database: `product_sales`
 --
+
+DELIMITER $$
+--
+-- Procedures
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getStoreSales` (IN `store` VARCHAR(45))  NO SQL
+SELECT * FROM Store_Information
+WHERE Store_Information.Store_Name=store$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
