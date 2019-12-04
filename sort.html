@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<style> 
+
+#dCenter{
+	width: 500px; margin: 0 auto;  color: #fff;
+}
+	
+</style>
+</head>
+
+<body>
+
+	<div id="dCenter">
+		<textarea type="text" id="numbers" cols="2" value="12\n05" style="width: 75px; height: 143px;"> </textarea>
+		<br>
+		<input type="button" id="btnSort" value = "Sort" />
+		<br>
+		<input type="text" id="txtTotal"  />
+	 </div>
+
+</body>
+
+<script type="text/javascript">
+
+var nums = document.getElementById("numbers");
+document.getElementById("btnSort").onclick = function(){ 
+	var n = nums.value.split("\n");
+	for (var i=0; i<n.length; i++){
+		if(n[i].length<2){
+			n[i] = "0"+n[i];		
+		}
+		n[i] = n[i].replace(/\s/g, ""); 
+	}
+	n.sort();
+
+	nums.value=n.join("\n");
+	document.getElementById("txtTotal").value = "Total Present = " + n.length;
+}
+</script>
+
+
+</html>
