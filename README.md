@@ -1,6 +1,6 @@
 
-This is Zeeshan A. Nizamani
+This is Zeeshan Nizamani
 
-Introducing my personal web page.
+This is my personal webpage.
 
 
